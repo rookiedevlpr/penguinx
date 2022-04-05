@@ -1,16 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
 import FirstComp from './FirstComp';
 import ParentComp from './Example/ParentComp';
+import { Routes } from 'react-router-dom';
 
+import{BrowserRouter,Routes,Route,} from 'react-router-dom';
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <ParentComp />
+    < BrowserRouter>
+       <Routes>
+          <Route path= "Parent" element={<ParentComp/> } />
+          <Route path= "/" element={<FirstComp/> } />
+
+            </Routes>
+    
+    
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );

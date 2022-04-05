@@ -3,21 +3,16 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
+    <div idName="root">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          <code>src/App.js</code> 
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <a>  link =  "https://www.digitalocean.com/community/tutorials/how-to-add-javascript-to-html"
+         </a>
       </header>
+
     </div>
   );
 }
